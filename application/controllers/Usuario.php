@@ -45,10 +45,10 @@ function eliminar($idusuario){
     header("Location: ".base_url()."Usuario");
 }
 function baja($idusuario){
-    $query=$this->db->query("SELECT * FROM usuario WHERE idusuario=$idusuario");
+    $query=$this->db->query("SELECT * FROM usuario WHERE idusuario='$idusuario'");
     $estado=$query->row()->estado;
     if ($estado=='ACTIVO'){
-        $this->db->query("UPDATE usuario SET estado='INACTIVO'WHERE idusuario='$idusuario'");
+        $this->db->query("UPDATE usuario SET estado='INACTIVO' WHERE idusuario='$idusuario'");
     }else{
         $this->db->query("UPDATE usuario SET estado='ACTIVO' WHERE idusuario='$idusuario'");
     }

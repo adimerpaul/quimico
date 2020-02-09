@@ -31,7 +31,7 @@
 
                     <tbody>
                     <?php
-                    $query=$this->db->query("SELECT * FROM usuario WHERE idusuario!=1");
+                    $query=$this->db->query("SELECT * FROM usuario WHERE idusuario<>1");
                     foreach ($query->result() as $row){
                         if ($row->estado=='ACTIVO'){
                             $estado="<span class='badge badge-success '>ACTIVO</span>";
