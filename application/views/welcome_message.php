@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="<?=base_url()?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="<?=base_url()?>vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="<?=base_url()?>vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="<?=base_url()?>vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="<?=base_url()?>build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="login">
+<div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
+
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form method="post" action="<?=base_url()?>Welcome/Login">
+                    <h1>Ingreso al sistema</h1>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Username" required="" name="usuario" />
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" placeholder="Password" required="" name="clave"/>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-success btn-block submit" href="index.html">Ingresar</button>
+                        <a class="reset_pass" href="">Perdiste tu contraseña?</a>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+                            <p>©<?=date('Y')?> All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
